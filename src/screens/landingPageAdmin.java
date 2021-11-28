@@ -9,12 +9,12 @@ package screens;
  *
  * @author Anderson
  */
-public class landingPage extends javax.swing.JFrame {
+public class landingPageAdmin extends javax.swing.JFrame {
 
     /**
      * Creates new form landingPage
      */
-    public landingPage() {
+    public landingPageAdmin() {
         initComponents();
     }
 
@@ -30,17 +30,14 @@ public class landingPage extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         landingLogo = new javax.swing.JLabel();
         textoPrincipal = new javax.swing.JLabel();
-        addPaciente = new javax.swing.JButton();
-        addHospital = new javax.swing.JButton();
-        viewReport = new javax.swing.JButton();
-        updatePatience = new javax.swing.JButton();
-        logout = new javax.swing.JButton();
-        welcomeMessage1 = new javax.swing.JLabel();
+        addUser = new javax.swing.JButton();
+        updateUser = new javax.swing.JButton();
+        logoutAdmin = new javax.swing.JButton();
+        deleteUser = new javax.swing.JButton();
+        welcomeMessage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("CovidApp - Menú Principal - Usuario");
-        setMaximumSize(new java.awt.Dimension(1920, 720));
-        setPreferredSize(new java.awt.Dimension(745, 587));
+        setTitle("CovidApp - Menú Principal - Admin");
         setSize(new java.awt.Dimension(1080, 720));
 
         landingLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/logo.png"))); // NOI18N
@@ -49,29 +46,25 @@ public class landingPage extends javax.swing.JFrame {
         textoPrincipal.setForeground(new java.awt.Color(204, 0, 0));
         textoPrincipal.setText("¿Qué quieres hacer?");
 
-        addPaciente.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
-        addPaciente.setForeground(new java.awt.Color(204, 0, 0));
-        addPaciente.setText("Registrar nuevo paciente");
+        addUser.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        addUser.setForeground(new java.awt.Color(204, 0, 0));
+        addUser.setText("Añadir Usuario");
 
-        addHospital.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
-        addHospital.setForeground(new java.awt.Color(204, 0, 0));
-        addHospital.setText("Registrar nuevo hospital");
+        updateUser.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        updateUser.setForeground(new java.awt.Color(204, 0, 0));
+        updateUser.setText("Actualizar Usuario");
 
-        viewReport.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
-        viewReport.setForeground(new java.awt.Color(204, 0, 0));
-        viewReport.setText("Ver reporte");
+        logoutAdmin.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        logoutAdmin.setForeground(new java.awt.Color(204, 0, 0));
+        logoutAdmin.setText("Salir");
 
-        updatePatience.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
-        updatePatience.setForeground(new java.awt.Color(204, 0, 0));
-        updatePatience.setText("Actualizar pacientes");
+        deleteUser.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        deleteUser.setForeground(new java.awt.Color(204, 0, 0));
+        deleteUser.setText("Eliminar Usuario");
 
-        logout.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
-        logout.setForeground(new java.awt.Color(204, 0, 0));
-        logout.setText("Salir");
-
-        welcomeMessage1.setFont(new java.awt.Font("Montserrat", 0, 18)); // NOI18N
-        welcomeMessage1.setForeground(new java.awt.Color(204, 0, 0));
-        welcomeMessage1.setText("Bienvenido");
+        welcomeMessage.setFont(new java.awt.Font("Montserrat", 0, 18)); // NOI18N
+        welcomeMessage.setForeground(new java.awt.Color(204, 0, 0));
+        welcomeMessage.setText("Bienvenido");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -84,29 +77,25 @@ public class landingPage extends javax.swing.JFrame {
                         .addComponent(landingLogo)
                         .addGap(86, 86, 86)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(updatePatience, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(addPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(deleteUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(addUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(viewReport, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(addHospital, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(logoutAdmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(updateUser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(44, 44, 44))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(welcomeMessage1)
+                            .addComponent(welcomeMessage)
                             .addComponent(textoPrincipal))
                         .addGap(123, 123, 123))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(logout, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(193, 193, 193))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(welcomeMessage1)
+                .addGap(35, 35, 35)
+                .addComponent(welcomeMessage)
                 .addGap(18, 18, 18)
                 .addComponent(textoPrincipal)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -116,15 +105,13 @@ public class landingPage extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(86, 86, 86)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(addHospital)
-                            .addComponent(addPaciente))
+                            .addComponent(updateUser)
+                            .addComponent(addUser))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(updatePatience)
-                            .addComponent(viewReport))))
-                .addGap(28, 28, 28)
-                .addComponent(logout)
-                .addContainerGap(59, Short.MAX_VALUE))
+                            .addComponent(deleteUser)
+                            .addComponent(logoutAdmin))))
+                .addContainerGap(103, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -158,33 +145,33 @@ public class landingPage extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(landingPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(landingPageAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(landingPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(landingPageAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(landingPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(landingPageAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(landingPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(landingPageAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new landingPage().setVisible(true);
+                new landingPageAdmin().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton addHospital;
-    private javax.swing.JButton addPaciente;
+    private javax.swing.JButton addUser;
+    private javax.swing.JButton deleteUser;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel landingLogo;
-    private javax.swing.JButton logout;
+    private javax.swing.JButton logoutAdmin;
     private javax.swing.JLabel textoPrincipal;
-    private javax.swing.JButton updatePatience;
-    private javax.swing.JButton viewReport;
-    private javax.swing.JLabel welcomeMessage1;
+    private javax.swing.JButton updateUser;
+    private javax.swing.JLabel welcomeMessage;
     // End of variables declaration//GEN-END:variables
 }
