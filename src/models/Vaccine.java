@@ -5,22 +5,22 @@
  */
 package models;
 
-import java.sql.Timestamp;
-
 /**
  *
  * @author PredatorDev
  */
-
-public class Role {
+public class Vaccine {
     private int Id;
     private String Name;
+    private int IsActive;
+    private int IsDeleted;
 
-    public Role(int Id, String Name) {
+    public Vaccine(int Id, String Name, int IsActive, int IsDeleted) {
         this.Id = Id;
         this.Name = Name;
+        this.IsActive = IsActive;
+        this.IsDeleted = IsDeleted;
     }
-    
 
     public int getId() {
         return Id;
@@ -36,5 +36,21 @@ public class Role {
 
     public void setName(String Name) {
         this.Name = Name;
+    }
+
+    public int getIsActive() {
+        return IsActive;
+    }
+
+    public void setIsActive(int IsActive) {
+        this.IsActive = IsActive;
+    }
+
+    public int getIsDeleted() {
+        return IsDeleted;
+    }
+
+    public void setIsDeleted(int IsDeleted) {
+        this.IsDeleted = IsDeleted;
     }
 }
