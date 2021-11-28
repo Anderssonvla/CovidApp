@@ -27,7 +27,7 @@ public class RoleCnt {
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM Roles;");
             while(rs.next()) {
-                Role row = new Role(rs.getInt(1), rs.getString(2), rs.getTimestamp(3), rs.getTimestamp(3));
+                Role row = new Role(rs.getInt(1), rs.getString(2));
                 result.add(row);
             }
             con.close();
@@ -37,13 +37,13 @@ public class RoleCnt {
     
     public Role findOne(int Id) throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
-        Role result = new Role(0, "", null, null);
+        Role result = new Role(0, "");
         try (Connection con = db.getConn()) {
             PreparedStatement stmt = (PreparedStatement) con.prepareStatement("SELECT * FROM Roles WHERE Id = ?;");
             stmt.setInt(1, Id);
             ResultSet rs = stmt.executeQuery();
             while(rs.next()) {
-                result = new Role(rs.getInt(1), rs.getString(2), rs.getTimestamp(3), rs.getTimestamp(3));
+                result = new Role(rs.getInt(1), rs.getString(2));
             }
             con.close();
         }

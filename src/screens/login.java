@@ -3,10 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package helpers;
-
-import java.awt.*;
-import javax.swing.*;
+package screens;
 
 /**
  *
@@ -128,12 +125,6 @@ public class login extends javax.swing.JFrame {
 
     private void usuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuarioActionPerformed
         // TODO add your handling code here:
-        @SuppressWarnings("LocalVariableHidesMemberVariable")
-        JTextField usuario = new JTextField(10);
-        TextPrompt placeholder = new TextPrompt("Usuario", usuario);
-    placeholder.changeAlpha(0.75f);
-    placeholder.changeStyle(Font.ITALIC);
-        
     }//GEN-LAST:event_usuarioActionPerformed
 
     private void ingresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingresarActionPerformed

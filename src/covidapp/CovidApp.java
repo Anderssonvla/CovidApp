@@ -5,7 +5,7 @@
  */
 package covidapp;
 
-import helpers.login;
+import screens.login;
 import controllers.RoleCnt;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -32,8 +32,6 @@ public class CovidApp {
         Role result = roleCnt.findOne(2);
         System.out.println(result.getId());
         System.out.println(result.getName());
-        System.out.println(result.getCreatedAt());
-        System.out.println(result.getUpdatedAt());
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
