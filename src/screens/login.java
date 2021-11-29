@@ -35,6 +35,7 @@ public class login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de control - Casos Covid");
+        setMaximumSize(new java.awt.Dimension(1920, 720));
         setSize(new java.awt.Dimension(1080, 720));
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo.png"))); // NOI18N
@@ -81,7 +82,7 @@ public class login extends javax.swing.JFrame {
             .addGroup(panel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 238, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 220, Short.MAX_VALUE)
                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
                         .addComponent(iniciarSesion)
@@ -99,13 +100,13 @@ public class login extends javax.swing.JFrame {
             .addGroup(panel1Layout.createSequentialGroup()
                 .addGap(99, 99, 99)
                 .addComponent(iniciarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
-                .addGap(104, 104, 104)
+                .addGap(35, 35, 35)
                 .addComponent(usuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(41, 41, 41)
                 .addComponent(contrasena)
-                .addGap(60, 60, 60)
+                .addGap(54, 54, 54)
                 .addComponent(ingresar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(80, 80, 80))
+                .addGap(132, 132, 132))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
