@@ -9,12 +9,12 @@ package screens;
  *
  * @author Anderson
  */
-public class login extends javax.swing.JFrame {
+public class Login extends javax.swing.JFrame {
 
     /**
      * Creates new form login
      */
-    public login() {
+    public Login() {
         initComponents();
     }
 
@@ -35,7 +35,6 @@ public class login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de control - Casos Covid");
-        setMaximumSize(new java.awt.Dimension(1920, 720));
         setSize(new java.awt.Dimension(1080, 720));
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo.png"))); // NOI18N
