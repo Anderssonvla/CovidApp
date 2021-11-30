@@ -14,22 +14,22 @@ import java.sql.Statement;
 
 import java.util.ArrayList;
 
-import models.Role;
+import models.State;
 import services.DatabaseConnection;
 
 /**
  *
  * @author PredatorDev
  */
-public class RoleCnt {
-    public ArrayList<Role> find() throws SQLException {
+public class StateCnt {
+    public ArrayList<State> find() throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
-        ArrayList<Role> result = new ArrayList<>();
+        ArrayList<State> result = new ArrayList<>();
         try (Connection con = db.getConn()) {
             Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT Id, Name FROM Roles;");
+            ResultSet rs = stmt.executeQuery("SELECT Id, Name, IsActive, IsDeleted, ISOCode FROM States;");
             while(rs.next()) {
-                Role row = new Role(rs.getInt(1), rs.getString(2));
+                State row = new State(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getInt(4), rs.getString(5));
                 result.add(row);
             }
             con.close();
@@ -37,43 +37,49 @@ public class RoleCnt {
         return result.isEmpty() ? null : result;
     }
     
-    public Role findOne(int Id) throws SQLException {
+    public State findOne(int Id) throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
-        Role result = new Role(0, "");
+        State result = new State(0, "", 0, 0, "");
         try (Connection con = db.getConn()) {
-            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("SELECT Id, Name FROM Roles WHERE Id = ?;");
+            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("SELECT Id, Name, IsActive, IsDeleted, ISOCode FROM States WHERE Id = ?;");
             stmt.setInt(1, Id);
             ResultSet rs = stmt.executeQuery();
             while(rs.next()) {
-                result = new Role(rs.getInt(1), rs.getString(2));
+                result = new State(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getInt(4), rs.getString(5));
             }
             con.close();
         }
         return result;
     }
     
-    public void add(Role data) throws SQLException {
+    public void add(State data) throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
         try (Connection con = db.getConn()) {
-            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("INSERT INTO Roles (Name) VALUES (?);");
+            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("INSERT INTO States (Name, IsActive, IsDeleted, ISOCode) VALUES (?, ?, ?, ?);");
             stmt.setString(1, data.getName());
+            stmt.setInt(2, data.getIsActive());
+            stmt.setInt(3, data.getIsDeleted());
+            stmt.setString(4, data.getISOCode());
             int operation = stmt.executeUpdate();
             con.close();
-            System.out.println("Rol añadido correctamente! " + operation + " registros afectados.");
+            System.out.println("Departamento/estado/provincia añadido correctamente! " + operation + " registros afectados.");
         } catch (Exception e) {
             System.err.println(e);
         }
     }
     
-    public void update(int Id, Role data) throws SQLException {
+    public void update(int Id, State data) throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
         try (Connection con = db.getConn()) {
-            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("UPDATE Roles SET Name = ? WHERE Id = ?;");
+            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("UPDATE States SET Name = ?, IsActive = ?, IsDeleted = ?, ISOCode = ? WHERE Id = ?;");
             stmt.setString(1, data.getName());
-            stmt.setInt(2, Id);
+            stmt.setInt(2, data.getIsActive());
+            stmt.setInt(3, data.getIsDeleted());
+            stmt.setString(4, data.getISOCode());
+            stmt.setInt(5, Id);
             int operation = stmt.executeUpdate();
             con.close();
-            System.out.println("Rol actualizado correctamente! " + operation + " registros afectados.");
+            System.out.println("Departamento/estado/provincia actualizado correctamente! " + operation + " registros afectados.");
         } catch (Exception e) {
             System.err.println(e);
         }
@@ -82,11 +88,11 @@ public class RoleCnt {
     public void delete(int Id) throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
         try (Connection con = db.getConn()) {
-            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("DELETE FROM Roles WHERE Id = ?;");
+            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("DELETE FROM States WHERE Id = ?;");
             stmt.setInt(1, Id);
             int operation = stmt.executeUpdate();
             con.close();
-            System.out.println("Rol eliminado correctamente! " + operation + " registros afectados.");
+            System.out.println("Departamento/estado/provincia eliminado correctamente! " + operation + " registros afectados.");
         } catch (Exception e) {
             System.err.println(e);
         }

@@ -70,7 +70,7 @@ public class PatientCnt {
             stmt.setInt(12, data.getIsDeleted());
             int operation = stmt.executeUpdate();
             con.close();
-            System.out.println("Caso añadido correctamente! " + operation + " registros afectados.");
+            System.out.println("Paciente añadido correctamente! " + operation + " registros afectados.");
         } catch (Exception e) {
             System.err.println(e);
         }
@@ -95,7 +95,7 @@ public class PatientCnt {
             stmt.setInt(13, Id);
             int operation = stmt.executeUpdate();
             con.close();
-            System.out.println("Caso actualizado correctamente! " + operation + " registros afectados.");
+            System.out.println("Paciente actualizado correctamente! " + operation + " registros afectados.");
         } catch (Exception e) {
             System.err.println(e);
         }
@@ -108,7 +108,7 @@ public class PatientCnt {
             stmt.setInt(1, Id);
             int operation = stmt.executeUpdate();
             con.close();
-            System.out.println("Caso eliminado correctamente! " + operation + " registros afectados.");
+            System.out.println("Paciente eliminado correctamente! " + operation + " registros afectados.");
         } catch (Exception e) {
             System.err.println(e);
         }

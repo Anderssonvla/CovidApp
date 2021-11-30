@@ -14,22 +14,22 @@ import java.sql.Statement;
 
 import java.util.ArrayList;
 
-import models.Role;
+import models.Status;
 import services.DatabaseConnection;
 
 /**
  *
  * @author PredatorDev
  */
-public class RoleCnt {
-    public ArrayList<Role> find() throws SQLException {
+public class StatusCnt {
+    public ArrayList<Status> find() throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
-        ArrayList<Role> result = new ArrayList<>();
+        ArrayList<Status> result = new ArrayList<>();
         try (Connection con = db.getConn()) {
             Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT Id, Name FROM Roles;");
+            ResultSet rs = stmt.executeQuery("SELECT Id, Name, Description, TableName, Field FROM Status;");
             while(rs.next()) {
-                Role row = new Role(rs.getInt(1), rs.getString(2));
+                Status row = new Status(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5));
                 result.add(row);
             }
             con.close();
@@ -37,43 +37,49 @@ public class RoleCnt {
         return result.isEmpty() ? null : result;
     }
     
-    public Role findOne(int Id) throws SQLException {
+    public Status findOne(int Id) throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
-        Role result = new Role(0, "");
+        Status result = new Status(0, "", "", "", "");
         try (Connection con = db.getConn()) {
-            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("SELECT Id, Name FROM Roles WHERE Id = ?;");
+            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("SELECT Id, Name, Description, TableName, Field FROM Status WHERE Id = ?;");
             stmt.setInt(1, Id);
             ResultSet rs = stmt.executeQuery();
             while(rs.next()) {
-                result = new Role(rs.getInt(1), rs.getString(2));
+                result = new Status(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5));
             }
             con.close();
         }
         return result;
     }
     
-    public void add(Role data) throws SQLException {
+    public void add(Status data) throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
         try (Connection con = db.getConn()) {
-            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("INSERT INTO Roles (Name) VALUES (?);");
+            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("INSERT INTO Status (Name, Description, TableName, Field) VALUES (?, ?, ?, ?);");
             stmt.setString(1, data.getName());
+            stmt.setString(2, data.getDescription());
+            stmt.setString(3, data.getTableName());
+            stmt.setString(4, data.getField());
             int operation = stmt.executeUpdate();
             con.close();
-            System.out.println("Rol añadido correctamente! " + operation + " registros afectados.");
+            System.out.println("Status añadido correctamente! " + operation + " registros afectados.");
         } catch (Exception e) {
             System.err.println(e);
         }
     }
     
-    public void update(int Id, Role data) throws SQLException {
+    public void update(int Id, Status data) throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
         try (Connection con = db.getConn()) {
-            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("UPDATE Roles SET Name = ? WHERE Id = ?;");
+            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("UPDATE Status SET Name = ?, Description = ?, TableName = ?, Field = ? WHERE Id = ?;");
             stmt.setString(1, data.getName());
-            stmt.setInt(2, Id);
+            stmt.setString(2, data.getDescription());
+            stmt.setString(3, data.getTableName());
+            stmt.setString(4, data.getField());
+            stmt.setInt(5, Id);
             int operation = stmt.executeUpdate();
             con.close();
-            System.out.println("Rol actualizado correctamente! " + operation + " registros afectados.");
+            System.out.println("Status actualizado correctamente! " + operation + " registros afectados.");
         } catch (Exception e) {
             System.err.println(e);
         }
@@ -82,11 +88,11 @@ public class RoleCnt {
     public void delete(int Id) throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
         try (Connection con = db.getConn()) {
-            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("DELETE FROM Roles WHERE Id = ?;");
+            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("DELETE FROM Status WHERE Id = ?;");
             stmt.setInt(1, Id);
             int operation = stmt.executeUpdate();
             con.close();
-            System.out.println("Rol eliminado correctamente! " + operation + " registros afectados.");
+            System.out.println("Status eliminado correctamente! " + operation + " registros afectados.");
         } catch (Exception e) {
             System.err.println(e);
         }
