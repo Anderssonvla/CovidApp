@@ -14,22 +14,22 @@ import java.sql.Statement;
 
 import java.util.ArrayList;
 
-import models.Case;
+import models.Hospital;
 import services.DatabaseConnection;
 
 /**
  *
  * @author PredatorDev
  */
-public class CaseCnt {
-    public ArrayList<Case> find() throws SQLException {
+public class HospitalCnt {
+    public ArrayList<Hospital> find() throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
-        ArrayList<Case> result = new ArrayList<>();
+        ArrayList<Hospital> result = new ArrayList<>();
         try (Connection con = db.getConn()) {
             Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT Id, PatientId, HospitalId, IsActive, IsDeleted FROM Cases;");
+            ResultSet rs = stmt.executeQuery("SELECT Id, Name, IntUnitCares, IsActive, IsDeleted FROM Hospitals;");
             while(rs.next()) {
-                Case row = new Case(rs.getInt(1), rs.getInt(2), rs.getInt(3), rs.getInt(4), rs.getInt(5));
+                Hospital row = new Hospital(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getInt(4), rs.getInt(5));
                 result.add(row);
             }
             con.close();
@@ -37,49 +37,49 @@ public class CaseCnt {
         return result.isEmpty() ? null : result;
     }
     
-    public Case findOne(int Id) throws SQLException {
+    public Hospital findOne(int Id) throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
-        Case result = new Case(0, 0, 0, 0, 0);
+        Hospital result = new Hospital(0, "", 0, 0, 0);
         try (Connection con = db.getConn()) {
-            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("SELECT Id, PatientId, HospitalId, IsActive, IsDeleted FROM Cases WHERE Id = ?;");
+            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("SELECT Id, Name, IntUnitCares, IsActive, IsDeleted FROM Hospitals WHERE Id = ?;");
             stmt.setInt(1, Id);
             ResultSet rs = stmt.executeQuery();
             while(rs.next()) {
-                result = new Case(rs.getInt(1), rs.getInt(2), rs.getInt(3), rs.getInt(4), rs.getInt(5));
+                result = new Hospital(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getInt(4), rs.getInt(5));
             }
             con.close();
         }
         return result;
     }
     
-    public void add(Case data) throws SQLException {
+    public void add(Hospital data) throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
         try (Connection con = db.getConn()) {
-            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("INSERT INTO Cases (PatientId, HospitalId, IsActive, IsDeleted) VALUES (?, ?, ?, ?);");
-            stmt.setInt(1, data.getPatientId());
-            stmt.setInt(2, data.getHospitalId());
+            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("INSERT INTO Hospitals (Name, IntUnitCares, IsActive, IsDeleted) VALUES (?, ?, ?, ?);");
+            stmt.setString(1, data.getName());
+            stmt.setInt(2, data.getIntUnitCares());
             stmt.setInt(3, data.getIsActive());
             stmt.setInt(4, data.getIsDeleted());
             int operation = stmt.executeUpdate();
             con.close();
-            System.out.println("Caso añadido correctamente! " + operation + " registros afectados.");
+            System.out.println("Hospital añadido correctamente! " + operation + " registros afectados.");
         } catch (Exception e) {
             System.err.println(e);
         }
     }
     
-    public void update(int Id, Case data) throws SQLException {
+    public void update(int Id, Hospital data) throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
         try (Connection con = db.getConn()) {
-            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("UPDATE Roles SET PatientId = ?, HospitalId = ?, IsActive = ?, IsDeleted = ? WHERE Id = ?;");
-            stmt.setInt(1, data.getPatientId());
-            stmt.setInt(2, data.getHospitalId());
+            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("UPDATE Hospitals SET Name = ?, IntUnitCares = ?, IsActive = ?, IsDeleted = ? WHERE Id = ?;");
+            stmt.setString(1, data.getName());
+            stmt.setInt(2, data.getIntUnitCares());
             stmt.setInt(3, data.getIsActive());
             stmt.setInt(4, data.getIsDeleted());
             stmt.setInt(5, Id);
             int operation = stmt.executeUpdate();
             con.close();
-            System.out.println("Caso actualizado correctamente! " + operation + " registros afectados.");
+            System.out.println("Hospital actualizado correctamente! " + operation + " registros afectados.");
         } catch (Exception e) {
             System.err.println(e);
         }
@@ -88,11 +88,11 @@ public class CaseCnt {
     public void delete(int Id) throws SQLException {
         DatabaseConnection db = new DatabaseConnection();
         try (Connection con = db.getConn()) {
-            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("DELETE FROM Cases WHERE Id = ?;");
+            PreparedStatement stmt = (PreparedStatement) con.prepareStatement("DELETE FROM Hospitals WHERE Id = ?;");
             stmt.setInt(1, Id);
             int operation = stmt.executeUpdate();
             con.close();
-            System.out.println("Caso eliminado correctamente! " + operation + " registros afectados.");
+            System.out.println("Hospital eliminado correctamente! " + operation + " registros afectados.");
         } catch (Exception e) {
             System.err.println(e);
         }
