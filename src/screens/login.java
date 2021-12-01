@@ -32,6 +32,8 @@ public class Login extends javax.swing.JFrame {
         usuario = new javax.swing.JTextField();
         contrasena = new javax.swing.JPasswordField();
         ingresar = new javax.swing.JButton();
+        UserLabel = new javax.swing.JLabel();
+        PasswordLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de control - Casos Covid");
@@ -51,7 +53,6 @@ public class Login extends javax.swing.JFrame {
         usuario.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
         usuario.setForeground(new java.awt.Color(204, 0, 0));
         usuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        usuario.setText("Usuario"); // NOI18N
         usuario.setMaximumSize(new java.awt.Dimension(50, 50));
         usuario.setMinimumSize(new java.awt.Dimension(50, 50));
         usuario.setName(""); // NOI18N
@@ -63,7 +64,6 @@ public class Login extends javax.swing.JFrame {
 
         contrasena.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
         contrasena.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        contrasena.setText("jPasswordField1");
 
         ingresar.setFont(new java.awt.Font("Montserrat", 0, 14)); // NOI18N
         ingresar.setForeground(new java.awt.Color(153, 0, 0));
@@ -73,6 +73,14 @@ public class Login extends javax.swing.JFrame {
                 ingresarActionPerformed(evt);
             }
         });
+
+        UserLabel.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        UserLabel.setForeground(new java.awt.Color(204, 0, 0));
+        UserLabel.setText("Usuario");
+
+        PasswordLabel.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        PasswordLabel.setForeground(new java.awt.Color(204, 0, 0));
+        PasswordLabel.setText("Contraseña");
 
         javax.swing.GroupLayout panel1Layout = new javax.swing.GroupLayout(panel1);
         panel1.setLayout(panel1Layout);
@@ -91,7 +99,13 @@ public class Login extends javax.swing.JFrame {
                             .addComponent(contrasena)
                             .addComponent(usuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(ingresar, javax.swing.GroupLayout.DEFAULT_SIZE, 265, Short.MAX_VALUE))
-                        .addGap(32, 32, 32))))
+                        .addGap(32, 32, 32))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
+                        .addComponent(UserLabel)
+                        .addGap(142, 142, 142))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
+                        .addComponent(PasswordLabel)
+                        .addGap(130, 130, 130))))
         );
         panel1Layout.setVerticalGroup(
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -101,9 +115,13 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(iniciarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
                 .addGap(35, 35, 35)
                 .addComponent(usuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(UserLabel)
+                .addGap(21, 21, 21)
                 .addComponent(contrasena)
-                .addGap(54, 54, 54)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(PasswordLabel)
+                .addGap(32, 32, 32)
                 .addComponent(ingresar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(132, 132, 132))
         );
@@ -166,6 +184,8 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_ingresarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel PasswordLabel;
+    private javax.swing.JLabel UserLabel;
     private javax.swing.JPasswordField contrasena;
     private javax.swing.JButton ingresar;
     private javax.swing.JLabel iniciarSesion;
