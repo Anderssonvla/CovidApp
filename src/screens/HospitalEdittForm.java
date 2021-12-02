@@ -40,10 +40,16 @@ public class HospitalEdittForm extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/logo.png"))); // NOI18N
 
+        jLabel2.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 0, 0));
         jLabel2.setText("Formulario de edicion de Hospitales");
 
+        NameHospitalLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        NameHospitalLabel.setForeground(new java.awt.Color(204, 0, 0));
         NameHospitalLabel.setText("Nombre del Hospital");
 
+        UciLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        UciLabel.setForeground(new java.awt.Color(204, 0, 0));
         UciLabel.setText("Numero de UCI's Disponibles");
 
         UCI.addActionListener(new java.awt.event.ActionListener() {
@@ -52,6 +58,8 @@ public class HospitalEdittForm extends javax.swing.JFrame {
             }
         });
 
+        EditButton.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        EditButton.setForeground(new java.awt.Color(204, 0, 0));
         EditButton.setText("Editar");
         EditButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -59,6 +67,8 @@ public class HospitalEdittForm extends javax.swing.JFrame {
             }
         });
 
+        CancelButton.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        CancelButton.setForeground(new java.awt.Color(204, 0, 0));
         CancelButton.setText("Cancelar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -70,7 +80,7 @@ public class HospitalEdittForm extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(121, Short.MAX_VALUE)
+                .addContainerGap(99, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Hospital)
@@ -100,7 +110,7 @@ public class HospitalEdittForm extends javax.swing.JFrame {
                 .addComponent(EditButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(CancelButton)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         pack();

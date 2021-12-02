@@ -46,23 +46,43 @@ public class EditUserForm extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/logo.png"))); // NOI18N
 
+        TitleLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        TitleLabel.setForeground(new java.awt.Color(204, 0, 0));
         TitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         TitleLabel.setText("Editar Usuario");
 
+        RoleLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        RoleLabel.setForeground(new java.awt.Color(204, 0, 0));
         RoleLabel.setText("Rol");
 
+        FirstNameLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        FirstNameLabel.setForeground(new java.awt.Color(204, 0, 0));
         FirstNameLabel.setText("Primer nombre");
 
+        FirstLastNameLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        FirstLastNameLabel.setForeground(new java.awt.Color(204, 0, 0));
         FirstLastNameLabel.setText("Primer apellido");
 
+        UserNameLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        UserNameLabel.setForeground(new java.awt.Color(204, 0, 0));
         UserNameLabel.setText("Nombre de usuario");
 
+        PasswordLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        PasswordLabel.setForeground(new java.awt.Color(204, 0, 0));
         PasswordLabel.setText("Contraseña");
 
-        Password.setText("jPasswordField1");
+        Password.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PasswordActionPerformed(evt);
+            }
+        });
 
+        EditButton.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        EditButton.setForeground(new java.awt.Color(204, 0, 0));
         EditButton.setText("Editar");
 
+        CancelButton.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        CancelButton.setForeground(new java.awt.Color(204, 0, 0));
         CancelButton.setText("Cancelar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -125,11 +145,15 @@ public class EditUserForm extends javax.swing.JFrame {
                 .addComponent(EditButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(CancelButton)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 7, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void PasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PasswordActionPerformed
 
     /**
      * @param args the command line arguments

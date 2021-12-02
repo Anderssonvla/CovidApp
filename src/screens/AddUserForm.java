@@ -46,22 +46,36 @@ public class AddUserForm extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/logo.png"))); // NOI18N
 
+        TitleLabel.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        TitleLabel.setForeground(new java.awt.Color(204, 0, 0));
         TitleLabel.setText("Creacion de Usuario Administrador");
 
+        RoleLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        RoleLabel.setForeground(new java.awt.Color(204, 0, 0));
         RoleLabel.setText("Rol");
 
+        FirstNameLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        FirstNameLabel.setForeground(new java.awt.Color(204, 0, 0));
         FirstNameLabel.setText("Primer nombre");
 
+        FirstLastNameLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        FirstLastNameLabel.setForeground(new java.awt.Color(204, 0, 0));
         FirstLastNameLabel.setText("Primer apellido");
 
+        UserNameLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        UserNameLabel.setForeground(new java.awt.Color(204, 0, 0));
         UserNameLabel.setText("Nombre de usuario");
 
+        PasswordLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        PasswordLabel.setForeground(new java.awt.Color(204, 0, 0));
         PasswordLabel.setText("Contraseña");
 
-        Password.setText("jPasswordField1");
-
+        CreateButton.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        CreateButton.setForeground(new java.awt.Color(204, 0, 0));
         CreateButton.setText("Crear");
 
+        CancelButton.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        CancelButton.setForeground(new java.awt.Color(204, 0, 0));
         CancelButton.setText("Cancelar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -76,23 +90,22 @@ public class AddUserForm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(CancelButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(PasswordLabel, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(UserName)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(UserNameLabel)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(FirstLastNameLabel)
-                                .addComponent(FirstNameLabel)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(RoleLabel)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(RolDropdown, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(TitleLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(FirstName)
-                                .addComponent(FirstLastName)))
-                        .addComponent(Password, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(CreateButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(PasswordLabel, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(UserName)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(UserNameLabel)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(FirstLastNameLabel)
+                            .addComponent(FirstNameLabel)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(RoleLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(RolDropdown, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(TitleLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(FirstName)
+                            .addComponent(FirstLastName)))
+                    .addComponent(Password, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(CreateButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(113, 113, 113))
         );
         layout.setVerticalGroup(
@@ -125,7 +138,7 @@ public class AddUserForm extends javax.swing.JFrame {
                 .addComponent(CreateButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(CancelButton)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 6, Short.MAX_VALUE))
         );
 
         pack();

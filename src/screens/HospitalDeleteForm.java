@@ -40,11 +40,17 @@ public class HospitalDeleteForm extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/logo.png"))); // NOI18N
 
+        jLabel2.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 0, 0));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Eliminar Hospital");
 
+        NameHospitalLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        NameHospitalLabel.setForeground(new java.awt.Color(204, 0, 0));
         NameHospitalLabel.setText("Nombre del Hospital");
 
+        UciLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        UciLabel.setForeground(new java.awt.Color(204, 0, 0));
         UciLabel.setText("Numero de UCI's Disponibles");
 
         UCI.addActionListener(new java.awt.event.ActionListener() {
@@ -53,6 +59,8 @@ public class HospitalDeleteForm extends javax.swing.JFrame {
             }
         });
 
+        EliminarButton.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        EliminarButton.setForeground(new java.awt.Color(204, 0, 0));
         EliminarButton.setText("Eliminar");
         EliminarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,6 +68,8 @@ public class HospitalDeleteForm extends javax.swing.JFrame {
             }
         });
 
+        CancelButton.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        CancelButton.setForeground(new java.awt.Color(204, 0, 0));
         CancelButton.setText("Cancelar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -101,7 +111,7 @@ public class HospitalDeleteForm extends javax.swing.JFrame {
                 .addComponent(EliminarButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(CancelButton)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         pack();

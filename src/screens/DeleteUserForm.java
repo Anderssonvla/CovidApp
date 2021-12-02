@@ -46,20 +46,32 @@ public class DeleteUserForm extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/logo.png"))); // NOI18N
 
+        TitleLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        TitleLabel.setForeground(new java.awt.Color(204, 0, 0));
         TitleLabel.setText("Eliminar Usuario                             ");
 
+        RoleLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        RoleLabel.setForeground(new java.awt.Color(204, 0, 0));
         RoleLabel.setText("Rol");
 
+        FirstNameLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        FirstNameLabel.setForeground(new java.awt.Color(204, 0, 0));
         FirstNameLabel.setText("Primer nombre");
 
+        FirstLastNameLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        FirstLastNameLabel.setForeground(new java.awt.Color(204, 0, 0));
         FirstLastNameLabel.setText("Primer apellido");
 
+        UserNameLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        UserNameLabel.setForeground(new java.awt.Color(204, 0, 0));
         UserNameLabel.setText("Nombre de usuario");
 
+        PasswordLabel.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        PasswordLabel.setForeground(new java.awt.Color(204, 0, 0));
         PasswordLabel.setText("Contraseña");
 
-        Password.setText("jPasswordField1");
-
+        DeleteButton.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        DeleteButton.setForeground(new java.awt.Color(204, 0, 0));
         DeleteButton.setText("Eliminar");
         DeleteButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,6 +79,8 @@ public class DeleteUserForm extends javax.swing.JFrame {
             }
         });
 
+        CancelButton.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
+        CancelButton.setForeground(new java.awt.Color(204, 0, 0));
         CancelButton.setText("Cancelar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -129,7 +143,7 @@ public class DeleteUserForm extends javax.swing.JFrame {
                 .addComponent(DeleteButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(CancelButton)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 7, Short.MAX_VALUE))
         );
 
         pack();

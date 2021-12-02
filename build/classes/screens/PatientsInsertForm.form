@@ -188,22 +188,16 @@
                                                           <Component id="AdmitedLabel" min="-2" max="-2" attributes="0"/>
                                                           <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
                                                           <Component id="HospitalLabel" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
                                               </Group>
                                               <Group type="102" attributes="0">
-                                                  <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="102" attributes="0">
-                                                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                                          <Component id="Admited" min="-2" pref="149" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
-                                                          <Component id="SymptomsLabel" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                                  <Component id="Admited" min="-2" pref="149" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
+                                                  <Component id="SymptomsLabel" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -273,10 +267,12 @@
                               <Component id="DUI" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="LastNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="NombreLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="DuiLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="NombreLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DuiLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
@@ -288,10 +284,12 @@
                               <Component id="VaxDosis" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="VaxQLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="VaxDosisLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="VaxNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="VaxDosisLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="VaxNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                   </Group>
