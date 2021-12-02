@@ -32,27 +32,25 @@
               <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                   <Component id="CancelButton" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="PasswordLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="UserName" alignment="1" max="32767" attributes="0"/>
-                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                          <Component id="UserNameLabel" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="FirstLastNameLabel" min="-2" max="-2" attributes="0"/>
-                              <Component id="FirstNameLabel" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" attributes="0">
-                                  <Component id="RoleLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="RolDropdown" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="TitleLabel" max="32767" attributes="0"/>
-                              <Component id="FirstName" alignment="0" max="32767" attributes="0"/>
-                              <Component id="FirstLastName" alignment="0" max="32767" attributes="0"/>
+                  <Component id="PasswordLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="UserName" alignment="1" max="32767" attributes="0"/>
+                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                      <Component id="UserNameLabel" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="FirstLastNameLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="FirstNameLabel" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="RoleLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="RolDropdown" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <Component id="TitleLabel" max="32767" attributes="0"/>
+                          <Component id="FirstName" alignment="0" max="32767" attributes="0"/>
+                          <Component id="FirstLastName" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="Password" alignment="0" max="32767" attributes="0"/>
-                      <Component id="CreateButton" alignment="0" max="32767" attributes="0"/>
                   </Group>
+                  <Component id="Password" alignment="0" max="32767" attributes="0"/>
+                  <Component id="DeleteButton" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
           </Group>
@@ -86,7 +84,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="Password" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="CreateButton" min="-2" max="-2" attributes="0"/>
+              <Component id="DeleteButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="CancelButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="12" max="32767" attributes="0"/>
@@ -104,7 +102,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="TitleLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Creacion de Usuario Administrador"/>
+        <Property name="text" type="java.lang.String" value="Eliminar Usuario                             "/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="RoleLabel">
@@ -145,10 +143,13 @@
         <Property name="text" type="java.lang.String" value="jPasswordField1"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="CreateButton">
+    <Component class="javax.swing.JButton" name="DeleteButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Crear"/>
+        <Property name="text" type="java.lang.String" value="Eliminar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DeleteButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="CancelButton">
       <Properties>

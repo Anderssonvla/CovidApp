@@ -37,6 +37,7 @@ public class landingPage extends javax.swing.JFrame {
         updatePatience = new javax.swing.JButton();
         logout = new javax.swing.JButton();
         welcomeMessage1 = new javax.swing.JLabel();
+        viewDelete = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CovidApp - Menú Principal - Usuario");
@@ -57,18 +58,21 @@ public class landingPage extends javax.swing.JFrame {
         addPaciente.setText("Registrar nuevo paciente");
         addPaciente.setBorderPainted(false);
         addPaciente.setFocusPainted(false);
+        addPaciente.setFocusable(false);
 
         addHospital.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         addHospital.setForeground(new java.awt.Color(204, 0, 0));
         addHospital.setText("Registrar nuevo hospital");
         addHospital.setBorderPainted(false);
         addHospital.setFocusPainted(false);
+        addHospital.setFocusable(false);
 
         viewReport.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         viewReport.setForeground(new java.awt.Color(204, 0, 0));
         viewReport.setText("Ver reporte");
         viewReport.setBorderPainted(false);
         viewReport.setFocusPainted(false);
+        viewReport.setFocusable(false);
 
         updatePatience.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         updatePatience.setForeground(new java.awt.Color(204, 0, 0));
@@ -81,15 +85,45 @@ public class landingPage extends javax.swing.JFrame {
         logout.setText("Salir");
         logout.setBorderPainted(false);
         logout.setFocusPainted(false);
+        logout.setFocusable(false);
+        logout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logoutActionPerformed(evt);
+            }
+        });
 
         welcomeMessage1.setFont(new java.awt.Font("Montserrat", 0, 18)); // NOI18N
         welcomeMessage1.setForeground(new java.awt.Color(204, 0, 0));
         welcomeMessage1.setText("Bienvenido");
 
+        viewDelete.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        viewDelete.setForeground(new java.awt.Color(204, 0, 0));
+        viewDelete.setText("Eliminar paciente");
+        viewDelete.setBorderPainted(false);
+        viewDelete.setFocusPainted(false);
+        viewDelete.setFocusable(false);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(addPaciente)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(logout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(updatePatience, javax.swing.GroupLayout.DEFAULT_SIZE, 169, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(viewDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(addHospital))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(viewReport, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -100,21 +134,8 @@ public class landingPage extends javax.swing.JFrame {
                         .addComponent(welcomeMessage1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(302, 302, 302)
-                        .addComponent(textoPrincipal))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(addPaciente)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(updatePatience, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(viewReport, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(addHospital)))
-                .addGap(0, 22, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(327, 327, 327)
-                .addComponent(logout, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(textoPrincipal)))
+                .addGap(0, 257, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -128,11 +149,13 @@ public class landingPage extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addPaciente)
                     .addComponent(updatePatience)
-                    .addComponent(viewReport)
-                    .addComponent(addHospital))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(logout)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(addHospital)
+                    .addComponent(viewDelete))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(logout)
+                    .addComponent(viewReport))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -148,6 +171,10 @@ public class landingPage extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_logoutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -193,6 +220,7 @@ public class landingPage extends javax.swing.JFrame {
     private javax.swing.JButton logout;
     private javax.swing.JLabel textoPrincipal;
     private javax.swing.JButton updatePatience;
+    private javax.swing.JButton viewDelete;
     private javax.swing.JButton viewReport;
     private javax.swing.JLabel welcomeMessage1;
     // End of variables declaration//GEN-END:variables
