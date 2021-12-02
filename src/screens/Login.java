@@ -180,7 +180,12 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_usuarioActionPerformed
 
     private void ingresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingresarActionPerformed
-        // TODO add your handling code here:
+       
+            landingPage landing = new landingPage();
+            landing.setLocationRelativeTo(null);
+            this.setVisible(false);
+            landing.setVisible(true);
+        
     }//GEN-LAST:event_ingresarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
