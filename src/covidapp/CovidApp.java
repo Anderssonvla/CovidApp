@@ -11,17 +11,20 @@ import models.Role;
 import screens.Login;
 
 
+
 /**
  *
  * @author PredatorDev
  */
-public class CovidApp {
+public class CovidApp{
 
     /**
      * @param args the command line arguments
      * @throws java.sql.SQLException
      */
     public static void main(String[] args) throws SQLException {
-        
+        Login Inicio = new Login();
+        Inicio.setLocationRelativeTo(null);
+        Inicio.setVisible(true);
     }
 }

@@ -32,6 +32,8 @@ public class Login extends javax.swing.JFrame {
         usuario = new javax.swing.JTextField();
         contrasena = new javax.swing.JPasswordField();
         ingresar = new javax.swing.JButton();
+        UserLabel = new javax.swing.JLabel();
+        PasswordLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema de control - Casos Covid");
@@ -51,7 +53,6 @@ public class Login extends javax.swing.JFrame {
         usuario.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
         usuario.setForeground(new java.awt.Color(204, 0, 0));
         usuario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        usuario.setText("Usuario"); // NOI18N
         usuario.setMaximumSize(new java.awt.Dimension(50, 50));
         usuario.setMinimumSize(new java.awt.Dimension(50, 50));
         usuario.setName(""); // NOI18N
@@ -63,7 +64,6 @@ public class Login extends javax.swing.JFrame {
 
         contrasena.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
         contrasena.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        contrasena.setText("jPasswordField1");
 
         ingresar.setFont(new java.awt.Font("Montserrat", 0, 14)); // NOI18N
         ingresar.setForeground(new java.awt.Color(153, 0, 0));
@@ -73,6 +73,14 @@ public class Login extends javax.swing.JFrame {
                 ingresarActionPerformed(evt);
             }
         });
+
+        UserLabel.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        UserLabel.setForeground(new java.awt.Color(204, 0, 0));
+        UserLabel.setText("Usuario");
+
+        PasswordLabel.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
+        PasswordLabel.setForeground(new java.awt.Color(204, 0, 0));
+        PasswordLabel.setText("Contraseña");
 
         javax.swing.GroupLayout panel1Layout = new javax.swing.GroupLayout(panel1);
         panel1.setLayout(panel1Layout);
@@ -91,7 +99,13 @@ public class Login extends javax.swing.JFrame {
                             .addComponent(contrasena)
                             .addComponent(usuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(ingresar, javax.swing.GroupLayout.DEFAULT_SIZE, 265, Short.MAX_VALUE))
-                        .addGap(32, 32, 32))))
+                        .addGap(32, 32, 32))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
+                        .addComponent(UserLabel)
+                        .addGap(141, 141, 141))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
+                        .addComponent(PasswordLabel)
+                        .addGap(127, 127, 127))))
         );
         panel1Layout.setVerticalGroup(
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -99,13 +113,17 @@ public class Login extends javax.swing.JFrame {
             .addGroup(panel1Layout.createSequentialGroup()
                 .addGap(99, 99, 99)
                 .addComponent(iniciarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
-                .addGap(35, 35, 35)
+                .addGap(8, 8, 8)
+                .addComponent(UserLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(usuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41)
+                .addGap(16, 16, 16)
+                .addComponent(PasswordLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(contrasena)
-                .addGap(54, 54, 54)
+                .addGap(18, 18, 18)
                 .addComponent(ingresar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(132, 132, 132))
+                .addGap(168, 168, 168))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -162,10 +180,17 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_usuarioActionPerformed
 
     private void ingresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingresarActionPerformed
-        // TODO add your handling code here:
+       
+            landingPage landing = new landingPage();
+            landing.setLocationRelativeTo(null);
+            this.setVisible(false);
+            landing.setVisible(true);
+        
     }//GEN-LAST:event_ingresarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel PasswordLabel;
+    private javax.swing.JLabel UserLabel;
     private javax.swing.JPasswordField contrasena;
     private javax.swing.JButton ingresar;
     private javax.swing.JLabel iniciarSesion;
