@@ -5,10 +5,9 @@
  */
 package covidapp;
 
-import controllers.RoleCnt;
+import controllers.UserCnt;
 import java.sql.SQLException;
-import models.Role;
-import screens.Login;
+import screens.LoginScreen;
 
 
 
@@ -17,14 +16,8 @@ import screens.Login;
  * @author PredatorDev
  */
 public class CovidApp{
-
-    /**
-     * @param args the command line arguments
-     * @throws java.sql.SQLException
-     */
     public static void main(String[] args) throws SQLException {
-        Login Inicio = new Login();
-        Inicio.setLocationRelativeTo(null);
-        Inicio.setVisible(true);
+        LoginScreen loginScreen = new LoginScreen();
+        loginScreen.setVisible(true);
     }
 }

@@ -181,7 +181,7 @@ public class Login extends javax.swing.JFrame {
 
     private void ingresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ingresarActionPerformed
        
-            landingPage landing = new landingPage();
+            LandingPage landing = new LandingPage();
             landing.setLocationRelativeTo(null);
             this.setVisible(false);
             landing.setVisible(true);

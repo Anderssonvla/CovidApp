@@ -4,9 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/PredatorDev/Desktop/CovidApp/src/covidapp/CovidApp.java</file>
-            <file>file:/C:/Users/PredatorDev/Desktop/CovidApp/src/screens/Login.java</file>
+            <file>file:/C:/Users/PredatorDev/Desktop/CovidApp/src/controllers/UserCnt.java</file>
+            <file>file:/C:/Users/PredatorDev/Desktop/CovidApp/src/screens/AddUserForm.java</file>
             <file>file:/C:/Users/PredatorDev/Desktop/CovidApp/src/screens/LoginScreen.java</file>
-            <file>file:/C:/Users/PredatorDev/Desktop/CovidApp/src/screens/landingPage.java</file>
+            <file>file:/C:/Users/PredatorDev/Desktop/CovidApp/src/controllers/RoleCnt.java</file>
         </group>
     </open-files>
 </project-private>

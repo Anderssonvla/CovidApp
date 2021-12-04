@@ -14,18 +14,28 @@ public class User {
     private int RoleId;
     private String FirstName;
     private String LastName;
+    private String Username;
     private String Password;
     private int IsActive;
     private int IsDeleted;
 
-    public User(int Id, int RoleId, String FirstName, String LastName, String Password, int IsActive, int IsDeleted) {
+    public User(int Id, int RoleId, String FirstName, String LastName, String Username, String Password, int IsActive, int IsDeleted) {
         this.Id = Id;
         this.RoleId = RoleId;
         this.FirstName = FirstName;
         this.LastName = LastName;
+        this.Username = Username;
         this.Password = Password;
         this.IsActive = IsActive;
         this.IsDeleted = IsDeleted;
+    }
+
+    public String getUsername() {
+        return Username;
+    }
+
+    public void setUsername(String Username) {
+        this.Username = Username;
     }
 
     public int getId() {
