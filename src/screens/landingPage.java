@@ -59,6 +59,11 @@ public class LandingPage extends javax.swing.JFrame {
         addPaciente.setBorderPainted(false);
         addPaciente.setFocusPainted(false);
         addPaciente.setFocusable(false);
+        addPaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addPacienteActionPerformed(evt);
+            }
+        });
 
         addHospital.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         addHospital.setForeground(new java.awt.Color(204, 0, 0));
@@ -66,6 +71,11 @@ public class LandingPage extends javax.swing.JFrame {
         addHospital.setBorderPainted(false);
         addHospital.setFocusPainted(false);
         addHospital.setFocusable(false);
+        addHospital.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addHospitalActionPerformed(evt);
+            }
+        });
 
         viewReport.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         viewReport.setForeground(new java.awt.Color(204, 0, 0));
@@ -79,6 +89,11 @@ public class LandingPage extends javax.swing.JFrame {
         updatePatience.setText("Actualizar pacientes");
         updatePatience.setBorderPainted(false);
         updatePatience.setFocusable(false);
+        updatePatience.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                updatePatienceActionPerformed(evt);
+            }
+        });
 
         logout.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         logout.setForeground(new java.awt.Color(204, 0, 0));
@@ -102,6 +117,11 @@ public class LandingPage extends javax.swing.JFrame {
         viewDelete.setBorderPainted(false);
         viewDelete.setFocusPainted(false);
         viewDelete.setFocusable(false);
+        viewDelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewDeleteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -174,7 +194,28 @@ public class LandingPage extends javax.swing.JFrame {
 
     private void logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutActionPerformed
         // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> { new LandingPage().setVisible(false); }); this.dispose();
     }//GEN-LAST:event_logoutActionPerformed
+
+    private void addPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addPacienteActionPerformed
+        // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> { new PatientsInsertForm().setVisible(true); }); this.dispose();
+    }//GEN-LAST:event_addPacienteActionPerformed
+
+    private void updatePatienceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updatePatienceActionPerformed
+        // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> { new PatientsEditForm().setVisible(true); }); this.dispose();
+    }//GEN-LAST:event_updatePatienceActionPerformed
+
+    private void viewDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewDeleteActionPerformed
+        // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> { new PatientsDeletetForm().setVisible(true); }); this.dispose();
+    }//GEN-LAST:event_viewDeleteActionPerformed
+
+    private void addHospitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addHospitalActionPerformed
+        // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> { new HospitalInsertForm().setVisible(true); }); this.dispose();
+    }//GEN-LAST:event_addHospitalActionPerformed
 
     /**
      * @param args the command line arguments
