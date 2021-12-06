@@ -40,15 +40,9 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-<<<<<<< Updated upstream
               <EmptySpace max="32767" attributes="0"/>
               <Component id="jPanel1" min="-2" pref="1060" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="290" max="-2" attributes="0"/>
-=======
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              <Component id="jPanel1" min="-2" pref="1050" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="300" max="-2" attributes="0"/>
->>>>>>> Stashed changes
           </Group>
       </Group>
     </DimensionLayout>
@@ -78,20 +72,16 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< Updated upstream
                       <Group type="102" attributes="0">
                           <Component id="MinisterioLogo" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
                           <Component id="jLabel1" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="445" max="-2" attributes="0"/>
                       </Group>
-=======
->>>>>>> Stashed changes
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-<<<<<<< Updated upstream
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
                                           <Component id="City" min="-2" pref="145" max="-2" attributes="0"/>
@@ -208,8 +198,6 @@
                                   </Group>
                               </Group>
                               <Group type="102" attributes="0">
-=======
->>>>>>> Stashed changes
                                   <Component id="personalInfoLabel" max="32767" attributes="0"/>
                                   <EmptySpace min="-2" pref="834" max="-2" attributes="0"/>
                               </Group>
@@ -224,20 +212,11 @@
                                                   <Component id="StateLabel" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
-<<<<<<< Updated upstream
-=======
-                                                  <Component id="City" min="-2" pref="145" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="State" min="-2" pref="145" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" attributes="0">
->>>>>>> Stashed changes
                                                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                                       <Component id="Age" alignment="0" max="32767" attributes="0"/>
                                                       <Component id="Nombre" alignment="0" pref="145" max="32767" attributes="0"/>
                                                   </Group>
                                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-<<<<<<< Updated upstream
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="102" attributes="0">
                                                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
@@ -267,132 +246,6 @@
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
-=======
-                                                  <Group type="103" groupAlignment="1" attributes="0">
-                                                      <Component id="Birth" min="-2" pref="145" max="-2" attributes="0"/>
-                                                      <Component id="LastName" min="-2" pref="145" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="DUI" min="-2" pref="130" max="-2" attributes="0"/>
-                                              <Component id="gender" alignment="0" min="-2" pref="127" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Component id="Address" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="Isss" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="MinisterioLogo" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
-                          <Component id="jLabel1" max="32767" attributes="0"/>
-                          <EmptySpace min="-2" pref="445" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="177" max="-2" attributes="0"/>
-                                  <Component id="BirthLabel" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                                  <Component id="AgeLabel" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                                  <Component id="NombreLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
-                                  <Component id="LastNameLabel" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                                  <Component id="genderLabel" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
-                                  <Component id="DuiLabel" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
-                                  <Component id="VaxQLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
-                                  <Component id="VaxNameLabel" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
-                                  <Component id="VaxDosisLabel" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="medicInfoLabel" alignment="0" min="-2" pref="252" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="CurrentState" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                                                  <Component id="CurrentStateLabel" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Component id="Kit" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                                                  <Component id="HospitalLabel1" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <EmptySpace max="-2" attributes="0"/>
-                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="Symptoms" min="-2" pref="314" max="-2" attributes="0"/>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                                                          <Component id="AdmitedLabel" min="-2" max="-2" attributes="0"/>
-                                                          <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
-                                                          <Component id="HospitalLabel" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                              </Group>
-                                              <Group type="102" attributes="0">
-                                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                                  <Component id="Admited" min="-2" pref="149" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
-                                                  <Component id="SymptomsLabel" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-                                          <Component id="Save" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                          <Component id="Save1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                          <Component id="LogoForm" min="-2" pref="153" max="-2" attributes="0"/>
-                                          <Group type="102" attributes="0">
-                                              <Component id="VaxQ" min="-2" pref="145" max="-2" attributes="0"/>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="VaxName" min="-2" pref="145" max="-2" attributes="0"/>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                  <Component id="VaxDosis" alignment="0" pref="153" max="32767" attributes="0"/>
-                                                  <Component id="Hospital" alignment="0" max="32767" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                      </Group>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <EmptySpace max="32767" attributes="0"/>
->>>>>>> Stashed changes
                       </Group>
                   </Group>
               </Group>
@@ -427,11 +280,7 @@
                   </Group>
                   <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< Updated upstream
                       <Group type="102" alignment="0" attributes="0">
-=======
-                      <Group type="102" attributes="0">
->>>>>>> Stashed changes
                           <Component id="personalInfoLabel" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -448,11 +297,7 @@
                               </Group>
                           </Group>
                       </Group>
-<<<<<<< Updated upstream
                       <Group type="102" alignment="0" attributes="0">
-=======
-                      <Group type="102" attributes="0">
->>>>>>> Stashed changes
                           <Component id="medicInfoLabel" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -460,7 +305,6 @@
                               <Component id="VaxName" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="VaxDosis" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-<<<<<<< Updated upstream
                           <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="VaxDosisLabel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -498,59 +342,12 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="CurrentStateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="VaxQLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="VaxDosisLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="VaxNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                  </Group>
-                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="Age" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="Birth" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="AgeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="BirthLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="CurrentState" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="CurrentStateLabel" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="Admited" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="Hospital" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
->>>>>>> Stashed changes
                               <Component id="AdmitedLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="HospitalLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-<<<<<<< Updated upstream
                   </Group>
                   <EmptySpace type="separate" pref="24" max="32767" attributes="0"/>
-=======
-                      <Group type="102" attributes="0">
-                          <Component id="gender" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="genderLabel" max="32767" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
->>>>>>> Stashed changes
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -564,18 +361,12 @@
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-<<<<<<< Updated upstream
                           <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-=======
->>>>>>> Stashed changes
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="City" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="State" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-<<<<<<< Updated upstream
                           <EmptySpace max="-2" attributes="0"/>
-=======
->>>>>>> Stashed changes
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="CityLabel" min="-2" max="-2" attributes="0"/>
                               <Component id="StateLabel" min="-2" max="-2" attributes="0"/>
@@ -594,11 +385,7 @@
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="IsssLabel" min="-2" max="-2" attributes="0"/>
-<<<<<<< Updated upstream
                   <EmptySpace pref="147" max="32767" attributes="0"/>
-=======
-                  <EmptySpace pref="186" max="32767" attributes="0"/>
->>>>>>> Stashed changes
               </Group>
           </Group>
         </DimensionLayout>
@@ -733,16 +520,6 @@
             <Property name="text" type="java.lang.String" value="&#xbf;Est&#xe1; vacunado?"/>
           </Properties>
         </Component>
-<<<<<<< Updated upstream
-=======
-        <Component class="javax.swing.JTextField" name="VaxQ">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Montserrat" size="11" style="0"/>
-            </Property>
-          </Properties>
-        </Component>
->>>>>>> Stashed changes
         <Component class="javax.swing.JTextField" name="LastName">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -761,16 +538,6 @@
             <Property name="text" type="java.lang.String" value="Apellidos"/>
           </Properties>
         </Component>
-<<<<<<< Updated upstream
-=======
-        <Component class="javax.swing.JTextField" name="VaxName">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Montserrat" size="11" style="0"/>
-            </Property>
-          </Properties>
-        </Component>
->>>>>>> Stashed changes
         <Component class="javax.swing.JLabel" name="VaxNameLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -782,19 +549,6 @@
             <Property name="text" type="java.lang.String" value="&#xbf;Qu&#xe9; Vacuna?"/>
           </Properties>
         </Component>
-<<<<<<< Updated upstream
-=======
-        <Component class="javax.swing.JTextField" name="VaxDosis">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Montserrat" size="11" style="0"/>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VaxDosisActionPerformed"/>
-          </Events>
-        </Component>
->>>>>>> Stashed changes
         <Component class="javax.swing.JLabel" name="VaxDosisLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -824,16 +578,6 @@
             <Property name="text" type="java.lang.String" value="Direcci&#xf3;n"/>
           </Properties>
         </Component>
-<<<<<<< Updated upstream
-=======
-        <Component class="javax.swing.JTextField" name="City">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Montserrat" size="11" style="0"/>
-            </Property>
-          </Properties>
-        </Component>
->>>>>>> Stashed changes
         <Component class="javax.swing.JLabel" name="CityLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -845,16 +589,6 @@
             <Property name="text" type="java.lang.String" value="Municipio"/>
           </Properties>
         </Component>
-<<<<<<< Updated upstream
-=======
-        <Component class="javax.swing.JTextField" name="State">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Montserrat" size="11" style="0"/>
-            </Property>
-          </Properties>
-        </Component>
->>>>>>> Stashed changes
         <Component class="javax.swing.JLabel" name="StateLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -884,16 +618,6 @@
             <Property name="text" type="java.lang.String" value="S&#xed;ntomas"/>
           </Properties>
         </Component>
-<<<<<<< Updated upstream
-=======
-        <Component class="javax.swing.JTextField" name="CurrentState">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Montserrat" size="11" style="0"/>
-            </Property>
-          </Properties>
-        </Component>
->>>>>>> Stashed changes
         <Component class="javax.swing.JLabel" name="CurrentStateLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -905,16 +629,6 @@
             <Property name="text" type="java.lang.String" value="Estado"/>
           </Properties>
         </Component>
-<<<<<<< Updated upstream
-=======
-        <Component class="javax.swing.JTextField" name="Hospital">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Montserrat" size="11" style="0"/>
-            </Property>
-          </Properties>
-        </Component>
->>>>>>> Stashed changes
         <Component class="javax.swing.JLabel" name="HospitalLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -955,16 +669,6 @@
             <Property name="text" type="java.lang.String" value="Ingresado"/>
           </Properties>
         </Component>
-<<<<<<< Updated upstream
-=======
-        <Component class="javax.swing.JTextField" name="Admited">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Montserrat" size="11" style="0"/>
-            </Property>
-          </Properties>
-        </Component>
->>>>>>> Stashed changes
         <Component class="javax.swing.JButton" name="Save">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -1014,19 +718,6 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
         </Component>
-<<<<<<< Updated upstream
-=======
-        <Component class="javax.swing.JTextField" name="gender">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Montserrat" size="11" style="0"/>
-            </Property>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="genderActionPerformed"/>
-          </Events>
-        </Component>
->>>>>>> Stashed changes
         <Component class="javax.swing.JLabel" name="genderLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -1038,7 +729,6 @@
             <Property name="text" type="java.lang.String" value="Genero"/>
           </Properties>
         </Component>
-<<<<<<< Updated upstream
         <Component class="javax.swing.JComboBox" name="VaxQ">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
@@ -1174,8 +864,6 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-=======
->>>>>>> Stashed changes
       </SubComponents>
     </Container>
   </SubComponents>
