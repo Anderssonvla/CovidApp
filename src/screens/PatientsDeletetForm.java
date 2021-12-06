@@ -43,35 +43,35 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
         Birth = new javax.swing.JTextField();
         BirthLabel = new javax.swing.JLabel();
         VaxQLabel = new javax.swing.JLabel();
-        VaxQ = new javax.swing.JTextField();
         LastName = new javax.swing.JTextField();
         LastNameLabel = new javax.swing.JLabel();
-        VaxName = new javax.swing.JTextField();
         VaxNameLabel = new javax.swing.JLabel();
-        VaxDosis = new javax.swing.JTextField();
         VaxDosisLabel = new javax.swing.JLabel();
         Address = new javax.swing.JTextField();
         AddressLabel = new javax.swing.JLabel();
-        City = new javax.swing.JTextField();
         CityLabel = new javax.swing.JLabel();
-        State = new javax.swing.JTextField();
         StateLabel = new javax.swing.JLabel();
         Symptoms = new javax.swing.JTextField();
         SymptomsLabel = new javax.swing.JLabel();
-        CurrentState = new javax.swing.JTextField();
         CurrentStateLabel = new javax.swing.JLabel();
-        Hospital = new javax.swing.JTextField();
         HospitalLabel = new javax.swing.JLabel();
         Kit = new javax.swing.JTextField();
         HospitalLabel1 = new javax.swing.JLabel();
         AdmitedLabel = new javax.swing.JLabel();
-        Admited = new javax.swing.JTextField();
         DeleteButton = new javax.swing.JButton();
         CancelButton = new javax.swing.JButton();
         personalInfoLabel = new javax.swing.JLabel();
         medicInfoLabel = new javax.swing.JLabel();
-        gender = new javax.swing.JTextField();
         genderLabel = new javax.swing.JLabel();
+        VaxQ = new javax.swing.JComboBox<>();
+        VaxName = new javax.swing.JComboBox<>();
+        VaxDosis = new javax.swing.JComboBox<>();
+        CurrentState = new javax.swing.JComboBox<>();
+        Admited = new javax.swing.JComboBox<>();
+        Hospital = new javax.swing.JComboBox<>();
+        Gender = new javax.swing.JComboBox<>();
+        City = new javax.swing.JComboBox<>();
+        State = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CovidApp - Formulario");
@@ -128,26 +128,15 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
         VaxQLabel.setForeground(new java.awt.Color(204, 0, 0));
         VaxQLabel.setText("¿Está vacunado?");
 
-        VaxQ.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
-
         LastName.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
 
         LastNameLabel.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         LastNameLabel.setForeground(new java.awt.Color(204, 0, 0));
         LastNameLabel.setText("Apellidos");
 
-        VaxName.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
-
         VaxNameLabel.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         VaxNameLabel.setForeground(new java.awt.Color(204, 0, 0));
         VaxNameLabel.setText("¿Qué Vacuna?");
-
-        VaxDosis.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
-        VaxDosis.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                VaxDosisActionPerformed(evt);
-            }
-        });
 
         VaxDosisLabel.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         VaxDosisLabel.setForeground(new java.awt.Color(204, 0, 0));
@@ -159,13 +148,9 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
         AddressLabel.setForeground(new java.awt.Color(204, 0, 0));
         AddressLabel.setText("Dirección");
 
-        City.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
-
         CityLabel.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         CityLabel.setForeground(new java.awt.Color(204, 0, 0));
         CityLabel.setText("Municipio");
-
-        State.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
 
         StateLabel.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         StateLabel.setForeground(new java.awt.Color(204, 0, 0));
@@ -177,13 +162,9 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
         SymptomsLabel.setForeground(new java.awt.Color(204, 0, 0));
         SymptomsLabel.setText("Síntomas");
 
-        CurrentState.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
-
         CurrentStateLabel.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         CurrentStateLabel.setForeground(new java.awt.Color(204, 0, 0));
         CurrentStateLabel.setText("Estado");
-
-        Hospital.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
 
         HospitalLabel.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         HospitalLabel.setForeground(new java.awt.Color(204, 0, 0));
@@ -198,8 +179,6 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
         AdmitedLabel.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         AdmitedLabel.setForeground(new java.awt.Color(204, 0, 0));
         AdmitedLabel.setText("Ingresado");
-
-        Admited.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
 
         DeleteButton.setFont(new java.awt.Font("Montserrat", 0, 14)); // NOI18N
         DeleteButton.setForeground(new java.awt.Color(204, 0, 0));
@@ -228,16 +207,27 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
         medicInfoLabel.setAlignmentX(0.5F);
         medicInfoLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        gender.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
-        gender.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                genderActionPerformed(evt);
-            }
-        });
-
         genderLabel.setFont(new java.awt.Font("Montserrat", 0, 12)); // NOI18N
         genderLabel.setForeground(new java.awt.Color(204, 0, 0));
         genderLabel.setText("Genero");
+
+        VaxQ.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        VaxName.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        VaxDosis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        CurrentState.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        Admited.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        Hospital.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        Gender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        City.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        State.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -261,7 +251,7 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
                                                 .addComponent(CityLabel)
                                                 .addGap(90, 90, 90)
                                                 .addComponent(StateLabel))
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                                 .addComponent(City, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                                 .addComponent(State, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -273,12 +263,19 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                                     .addComponent(Birth, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addComponent(LastName, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(DUI, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(gender, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(DUI, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                                .addGap(10, 10, 10)
+                                                .addComponent(Gender, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                     .addComponent(Address)
                                     .addComponent(Isss))
+                                .addGap(65, 65, 65)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(VaxQ, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(CurrentState, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(MinisterioLogo)
@@ -317,7 +314,6 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
                                     .addComponent(medicInfoLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(CurrentState, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGap(49, 49, 49)
                                                 .addComponent(CurrentStateLabel))
@@ -336,22 +332,17 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
                                                         .addGap(110, 110, 110)
                                                         .addComponent(HospitalLabel))))
                                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                                        .addGap(6, 6, 6)
-                                                        .addComponent(Admited, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                                        .addGap(137, 137, 137)
-                                                        .addComponent(SymptomsLabel)))
-                                                .addGap(0, 0, Short.MAX_VALUE))))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(VaxQ, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(VaxName, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(VaxDosis, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE)
-                                            .addComponent(Hospital)))
+                                                .addGap(137, 137, 137)
+                                                .addComponent(SymptomsLabel))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(6, 6, 6)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addComponent(Admited, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(VaxName, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                    .addComponent(VaxDosis, 0, 157, Short.MAX_VALUE)
+                                                    .addComponent(Hospital, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(99, 99, 99)
                                         .addComponent(DeleteButton)
@@ -406,7 +397,7 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
                             .addComponent(VaxQ, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(VaxName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(VaxDosis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(7, 7, 7)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(VaxQLabel)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -417,26 +408,27 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Age, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Birth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Birth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Gender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(AgeLabel)
                             .addComponent(BirthLabel)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(CurrentState, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(CurrentStateLabel))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(CurrentState, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Admited, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Hospital, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(CurrentStateLabel))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(AdmitedLabel)
                             .addComponent(HospitalLabel)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(gender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(27, 27, 27)
                         .addComponent(genderLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -466,7 +458,7 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
                     .addComponent(CancelButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(IsssLabel)
-                .addContainerGap(186, Short.MAX_VALUE))
+                .addContainerGap(187, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -476,7 +468,7 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1050, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(300, 300, 300))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -485,14 +477,6 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void genderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genderActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_genderActionPerformed
-
-    private void VaxDosisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VaxDosisActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_VaxDosisActionPerformed
 
     private void DeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteButtonActionPerformed
         // TODO add your handling code here:
@@ -539,21 +523,22 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField Address;
     private javax.swing.JLabel AddressLabel;
-    private javax.swing.JTextField Admited;
+    private javax.swing.JComboBox<String> Admited;
     private javax.swing.JLabel AdmitedLabel;
     private javax.swing.JTextField Age;
     private javax.swing.JLabel AgeLabel;
     private javax.swing.JTextField Birth;
     private javax.swing.JLabel BirthLabel;
     private javax.swing.JButton CancelButton;
-    private javax.swing.JTextField City;
+    private javax.swing.JComboBox<String> City;
     private javax.swing.JLabel CityLabel;
-    private javax.swing.JTextField CurrentState;
+    private javax.swing.JComboBox<String> CurrentState;
     private javax.swing.JLabel CurrentStateLabel;
     private javax.swing.JTextField DUI;
     private javax.swing.JButton DeleteButton;
     private javax.swing.JLabel DuiLabel;
-    private javax.swing.JTextField Hospital;
+    private javax.swing.JComboBox<String> Gender;
+    private javax.swing.JComboBox<String> Hospital;
     private javax.swing.JLabel HospitalLabel;
     private javax.swing.JLabel HospitalLabel1;
     private javax.swing.JTextField Isss;
@@ -565,17 +550,16 @@ public class PatientsDeletetForm extends javax.swing.JFrame {
     private javax.swing.JLabel MinisterioLogo;
     private javax.swing.JTextField Nombre;
     private javax.swing.JLabel NombreLabel;
-    private javax.swing.JTextField State;
+    private javax.swing.JComboBox<String> State;
     private javax.swing.JLabel StateLabel;
     private javax.swing.JTextField Symptoms;
     private javax.swing.JLabel SymptomsLabel;
-    private javax.swing.JTextField VaxDosis;
+    private javax.swing.JComboBox<String> VaxDosis;
     private javax.swing.JLabel VaxDosisLabel;
-    private javax.swing.JTextField VaxName;
+    private javax.swing.JComboBox<String> VaxName;
     private javax.swing.JLabel VaxNameLabel;
-    private javax.swing.JTextField VaxQ;
+    private javax.swing.JComboBox<String> VaxQ;
     private javax.swing.JLabel VaxQLabel;
-    private javax.swing.JTextField gender;
     private javax.swing.JLabel genderLabel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
