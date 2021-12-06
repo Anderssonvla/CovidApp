@@ -5,9 +5,7 @@
  */
 package covidapp;
 
-// import controllers.UserCnt;
 import java.sql.SQLException;
-// import screens.LandingPageSuperAdmin;
 import screens.LoginScreen;
 
 
@@ -20,7 +18,5 @@ public class CovidApp{
     public static void main(String[] args) throws SQLException {
         LoginScreen loginScreen = new LoginScreen();
         loginScreen.setVisible(true);
-        // LandingPageSuperAdmin adm = new LandingPageSuperAdmin();
-        // adm.setVisible(true);
     }
 }
