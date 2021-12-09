@@ -194,6 +194,11 @@ public class PatientsEditForm extends javax.swing.JFrame {
         Save1.setForeground(new java.awt.Color(204, 0, 0));
         Save1.setText("Regresar al Menú");
         Save1.setFocusable(false);
+        Save1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Save1ActionPerformed(evt);
+            }
+        });
 
         personalInfoLabel1.setFont(new java.awt.Font("Montserrat", 0, 18)); // NOI18N
         personalInfoLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -486,7 +491,13 @@ public class PatientsEditForm extends javax.swing.JFrame {
 
     private void SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveActionPerformed
         // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> { new LandingPage().setVisible(true); }); this.dispose();
     }//GEN-LAST:event_SaveActionPerformed
+
+    private void Save1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save1ActionPerformed
+        // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> { new LandingPage().setVisible(true); }); this.dispose();
+    }//GEN-LAST:event_Save1ActionPerformed
 
     /**
      * @param args the command line arguments

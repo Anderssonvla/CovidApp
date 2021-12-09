@@ -83,6 +83,11 @@ public class DeleteUserForm extends javax.swing.JFrame {
         CancelButton.setFont(new java.awt.Font("Montserrat", 0, 11)); // NOI18N
         CancelButton.setForeground(new java.awt.Color(204, 0, 0));
         CancelButton.setText("Cancelar");
+        CancelButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CancelButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -152,7 +157,13 @@ public class DeleteUserForm extends javax.swing.JFrame {
 
     private void DeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteButtonActionPerformed
         // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> { new LandingPage().setVisible(true); }); this.dispose();
     }//GEN-LAST:event_DeleteButtonActionPerformed
+
+    private void CancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelButtonActionPerformed
+        // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> { new LandingPage().setVisible(true); }); this.dispose();
+    }//GEN-LAST:event_CancelButtonActionPerformed
 
     /**
      * @param args the command line arguments

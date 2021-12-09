@@ -216,7 +216,6 @@
                                                       <Component id="Age" alignment="0" max="32767" attributes="0"/>
                                                       <Component id="Nombre" alignment="0" pref="145" max="32767" attributes="0"/>
                                                   </Group>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="102" attributes="0">
                                                           <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
@@ -695,6 +694,9 @@
             <Property name="text" type="java.lang.String" value="Regresar al Men&#xfa;"/>
             <Property name="focusable" type="boolean" value="false"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Save1ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="personalInfoLabel">
           <Properties>

@@ -196,6 +196,11 @@ public class PatientsInsertForm extends javax.swing.JFrame {
         Save1.setForeground(new java.awt.Color(204, 0, 0));
         Save1.setText("Regresar al Menú");
         Save1.setFocusable(false);
+        Save1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Save1ActionPerformed(evt);
+            }
+        });
 
         personalInfoLabel.setFont(new java.awt.Font("Montserrat", 0, 18)); // NOI18N
         personalInfoLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -347,7 +352,6 @@ public class PatientsInsertForm extends javax.swing.JFrame {
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                                     .addComponent(Age, javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addComponent(Nombre, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                                         .addGap(10, 10, 10)
@@ -490,7 +494,13 @@ public class PatientsInsertForm extends javax.swing.JFrame {
 
     private void SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveActionPerformed
         // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> { new LandingPage().setVisible(true); }); this.dispose();
     }//GEN-LAST:event_SaveActionPerformed
+
+    private void Save1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save1ActionPerformed
+        // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> { new LandingPage().setVisible(true); }); this.dispose();
+    }//GEN-LAST:event_Save1ActionPerformed
 
     /**
      * @param args the command line arguments

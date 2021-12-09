@@ -120,10 +120,12 @@ public class HospitalDeleteForm extends javax.swing.JFrame {
 
     private void UCIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UCIActionPerformed
         // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> { new LandingPage().setVisible(true); }); this.dispose();
     }//GEN-LAST:event_UCIActionPerformed
 
     private void EliminarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EliminarButtonActionPerformed
         // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> { new LandingPage().setVisible(true); }); this.dispose();
     }//GEN-LAST:event_EliminarButtonActionPerformed
 
     /**
